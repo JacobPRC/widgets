@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 // props: isActive, onClick, onDblClick title, content
+
 const Item = (props) => {
+  const [counter, setCounter] = useState(0);
+
+  const updateCounter = () => setCounter(counter + 1);
+
   return (
     <React.Fragment key={props.title}>
       <div

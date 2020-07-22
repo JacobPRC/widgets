@@ -19,9 +19,15 @@ const Accordion = ({ items }) => {
     />
   ));
   return (
-    <div className="ui styled accordion">
-      <div>{renderedItemComponent}</div>
-    </div>
+    <>
+      <div style={{ textAlign: "center" }}>
+        <h1>Thought provoking qustions to get to know the developer</h1>
+      </div>
+      <br />
+      <div className="ui styled accordion">
+        <div>{renderedItemComponent}</div>
+      </div>
+    </>
   );
 };
 
